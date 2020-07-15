@@ -10,6 +10,7 @@ def recvf(c):
 			print(data.decode('ascii'))
 
 def server():
+# to ecnrypt encryption key
 	pk = """-----BEGIN PUBLIC KEY-----
 	MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuDXmLnn23eM+AESxPu+b
 	Fc9mNhn1j7H+sU5M6Fl0izFJv7DsuhrEbP7pGFAyIEw3ZDmDxK1N1SVX6STSTT16

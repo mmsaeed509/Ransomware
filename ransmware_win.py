@@ -49,19 +49,19 @@ def partition_windows():
 #listing the files
 def dir_f_list(d):
 	extensions = [
-	'exe', 'dll', 'nt', 'sys', 'dvd', 'ebd', 'hiv',  # SYSTEM FILES [danger]
-	'doc', 'docx', 'xls', 'xlsx', 'ppt','pptx', # Microsoft office
-    'odt', 'odp', 'ods', 'txt', 'rtf', 'tex', 'pdf', 'epub', 'md', # OpenOffice, Adobe, Latex, Markdown, etc
-    'yml', 'yaml', 'json', 'xml', 'csv', # structured data
-    'db', 'sql', 'dbf', 'mdb', 'iso', # databases and disc images
-    'html', 'htm', 'xhtml', 'php', 'asp', 'aspx', 'js', 'jsp', 'css', # web technologies
-    'c', 'cpp', 'cxx', 'h', 'hpp', 'hxx', # C source code
-    'java', 'class', 'jar', # java source code
-    'ps', 'bat', 'vb', # windows based scripts
-    'go', 'py', 'pyc', 'bf', 'coffee', # other source code files
-	'jpg', 'jpeg', 'bmp', 'gif', 'png', 'svg', 'psd', 'raw', # images
-	'mp3','mp4', 'm4a', 'aac','ogg','flac', 'wav', 'wma', 'aiff', 'ape', # music and sound
-	'avi', 'flv', 'm4v', 'mkv', 'mov', 'mpg', 'mpeg', 'wmv', 'swf', '3gp', # Video and movies
+	'exe', 'dll', 'nt', 'sys', 'dvd', 'ebd', 'hiv',  
+	'doc', 'docx', 'xls', 'xlsx', 'ppt','pptx', 
+    'odt', 'odp', 'ods', 'txt', 'rtf', 'tex', 'pdf', 'epub', 'md', 
+    'yml', 'yaml', 'json', 'xml', 'csv',
+    'db', 'sql', 'dbf', 'mdb', 'iso', 
+    'html', 'htm', 'xhtml', 'php', 'asp', 'aspx', 'js', 'jsp', 'css', 
+    'c', 'cpp', 'cxx', 'h', 'hpp', 'hxx', 
+    'java', 'class', 'jar', 
+    'ps', 'bat', 'vb', 
+    'go', 'py', 'pyc', 'bf', 'coffee', 
+	'jpg', 'jpeg', 'bmp', 'gif', 'png', 'svg', 'psd', 'raw',
+	'mp3','mp4', 'm4a', 'aac','ogg','flac', 'wav', 'wma', 'aiff', 'ape',
+	'avi', 'flv', 'm4v', 'mkv', 'mov', 'mpg', 'mpeg', 'wmv', 'swf', '3gp',
 	'zip', 'tar', 'tgz', 'bz2', '7z', 'rar', 'bak' 
 	]
 	fd = []
